@@ -1,6 +1,56 @@
-[gd_scene load_steps=2 format=3 uid="uid://dytpk4vti4bjc"]
+[gd_scene load_steps=5 format=3 uid="uid://dytpk4vti4bjc"]
 
 [ext_resource type="Script" uid="uid://77y7evcwxfkg" path="res://scripts/transition.gd" id="1_rerct"]
 
-[node name="transition" type="CanvasLayer"]
+[sub_resource type="Animation" id="Animation_rerct"]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_f0i4t"]
+resource_name = "dissolve"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_px735"]
+_data = {
+&"RESET": SubResource("Animation_rerct"),
+&"dissolve": SubResource("Animation_f0i4t")
+}
+
+[node name="transition" type="Node2D"]
+z_index = 100
 script = ExtResource("1_rerct")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -810.0
+offset_top = -719.0
+offset_right = 1893.0
+offset_bottom = 1070.0
+color = Color(1, 1, 1, 0)
+
+[node name="animation" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_px735")
+}

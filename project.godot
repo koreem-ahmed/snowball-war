@@ -14,6 +14,10 @@ config/name="Snowball war"
 run/main_scene="uid://cg8elth8u0fag"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
+[autoload]
+
+Transition="*res://scenes/transition.tscn"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
