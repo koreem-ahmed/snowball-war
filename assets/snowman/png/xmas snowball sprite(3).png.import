@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2g2w1esc1not"
-path="res://.godot/imported/xmas snowball sprite(2).png-46e7e6b4ee1a736a09e3532718b41583.ctex"
+uid="uid://dl4pflkou815j"
+path="res://.godot/imported/xmas snowball sprite(3).png-d6edbcba16913738870964f91c1b710a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/xmas snowball sprite/png/xmas snowball sprite(2).png"
-dest_files=["res://.godot/imported/xmas snowball sprite(2).png-46e7e6b4ee1a736a09e3532718b41583.ctex"]
+source_file="res://assets/snowman/png/xmas snowball sprite(3).png"
+dest_files=["res://.godot/imported/xmas snowball sprite(3).png-d6edbcba16913738870964f91c1b710a.ctex"]
 
 [params]
 

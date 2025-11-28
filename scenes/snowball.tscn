@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://ddfr50dl5jwte"]
+
+[ext_resource type="Script" uid="uid://wdtb6ael8181" path="res://scripts/snowball.gd" id="1_xsgkx"]
+[ext_resource type="Texture2D" uid="uid://ciq3x0ejis8dj" path="res://assets/snowball/spritesheet/snowball_spritesheet_3x2.png" id="2_dnn3y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svv1h"]
+atlas = ExtResource("2_dnn3y")
+region = Rect2(0, 0, 512, 385)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4rw7"]
+atlas = ExtResource("2_dnn3y")
+region = Rect2(512, 0, 512, 385)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kbcc"]
+atlas = ExtResource("2_dnn3y")
+region = Rect2(1024, 0, 512, 385)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6q0j"]
+atlas = ExtResource("2_dnn3y")
+region = Rect2(0, 385, 512, 385)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1p75y"]
+atlas = ExtResource("2_dnn3y")
+region = Rect2(512, 385, 512, 385)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6lar"]
+atlas = ExtResource("2_dnn3y")
+region = Rect2(1024, 385, 512, 385)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vps8r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svv1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4rw7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kbcc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6q0j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1p75y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6lar")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c1vs4"]
+radius = 42.1393
+
+[node name="snowball" type="Node2D"]
+script = ExtResource("1_xsgkx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_vps8r")
+autoplay = "default"
+frame_progress = 0.671679
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-13, 0.999999)
+scale = Vector2(0.261039, 0.261039)
+shape = SubResource("CircleShape2D_c1vs4")

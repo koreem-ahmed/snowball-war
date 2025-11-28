@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://kq7ctg14gr10"]
+
+[ext_resource type="Script" uid="uid://cselan8o2v6h1" path="res://scripts/candy_enemy.gd" id="1_t2bk7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t2bk7"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="candy enemy" type="CharacterBody2D"]
+script = ExtResource("1_t2bk7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_t2bk7")
+frame_progress = 0.659881
