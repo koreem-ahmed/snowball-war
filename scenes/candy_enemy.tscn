@@ -1,13 +1,167 @@
-[gd_scene load_steps=3 format=3 uid="uid://kq7ctg14gr10"]
+[gd_scene load_steps=39 format=3 uid="uid://kq7ctg14gr10"]
 
 [ext_resource type="Script" uid="uid://cselan8o2v6h1" path="res://scripts/candy_enemy.gd" id="1_t2bk7"]
+[ext_resource type="Texture2D" uid="uid://bntw1vlacvjcy" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_000.png" id="2_ycpls"]
+[ext_resource type="Texture2D" uid="uid://dmtvhi14vvsri" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_001.png" id="3_go12v"]
+[ext_resource type="Texture2D" uid="uid://coqfwm4xbl773" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_002.png" id="4_y8fmc"]
+[ext_resource type="Texture2D" uid="uid://qficusfgd462" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_003.png" id="5_5lhss"]
+[ext_resource type="Texture2D" uid="uid://btknuj22xv86t" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_004.png" id="6_71s0y"]
+[ext_resource type="Texture2D" uid="uid://d1busahqm1hmx" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_005.png" id="7_yhg6w"]
+[ext_resource type="Texture2D" uid="uid://cdfq47ph23iyh" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_006.png" id="8_ocvca"]
+[ext_resource type="Texture2D" uid="uid://k3olxwp6tcmy" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_007.png" id="9_td8m7"]
+[ext_resource type="Texture2D" uid="uid://dk7mhesmpnvom" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_008.png" id="10_qc6is"]
+[ext_resource type="Texture2D" uid="uid://bi8tb186spla0" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_009.png" id="11_0n0re"]
+[ext_resource type="Texture2D" uid="uid://dtho3d7bbd1y3" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_010.png" id="12_1vy61"]
+[ext_resource type="Texture2D" uid="uid://dhm6vmxfab0bn" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Attacking/Wraith_01_Attack_011.png" id="13_3mn3c"]
+[ext_resource type="Texture2D" uid="uid://fwbik2e1kq32" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_000.png" id="14_mf6vp"]
+[ext_resource type="Texture2D" uid="uid://c2urph5oad4eo" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_001.png" id="15_p2dxi"]
+[ext_resource type="Texture2D" uid="uid://duvowiyk54r2y" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_002.png" id="16_fed6p"]
+[ext_resource type="Texture2D" uid="uid://dxgstrukrmqoi" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_003.png" id="17_4opty"]
+[ext_resource type="Texture2D" uid="uid://c3aegxg7xyg7a" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_004.png" id="18_0nvnf"]
+[ext_resource type="Texture2D" uid="uid://clnd3ekfo22eb" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_005.png" id="19_rdt54"]
+[ext_resource type="Texture2D" uid="uid://bcmfrw6f6rot4" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_006.png" id="20_xpg75"]
+[ext_resource type="Texture2D" uid="uid://6q84belir1kr" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_007.png" id="21_shqtf"]
+[ext_resource type="Texture2D" uid="uid://cs5wo806ayl3t" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_008.png" id="22_xrpn7"]
+[ext_resource type="Texture2D" uid="uid://b6808x461eecv" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_009.png" id="23_egyrw"]
+[ext_resource type="Texture2D" uid="uid://qe5qjby4o1k5" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_010.png" id="24_iwkjw"]
+[ext_resource type="Texture2D" uid="uid://dlvdluve3a1ot" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Idle/Wraith_01_Idle_011.png" id="25_k3t75"]
+[ext_resource type="Texture2D" uid="uid://c4t0vplkvdluo" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_000.png" id="26_nv82y"]
+[ext_resource type="Texture2D" uid="uid://dioskmugaolqt" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_001.png" id="27_5ucwl"]
+[ext_resource type="Texture2D" uid="uid://1k5snasec3f3" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_002.png" id="28_veuiw"]
+[ext_resource type="Texture2D" uid="uid://q1dgsb10voyf" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_003.png" id="29_daovl"]
+[ext_resource type="Texture2D" uid="uid://c2p12h73hd3ec" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_004.png" id="30_ta004"]
+[ext_resource type="Texture2D" uid="uid://yhglixe5e7to" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_005.png" id="31_1nr47"]
+[ext_resource type="Texture2D" uid="uid://gnmouxi4ds5h" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_006.png" id="32_ufudg"]
+[ext_resource type="Texture2D" uid="uid://dmlmxfw6uls8v" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_007.png" id="33_xvy06"]
+[ext_resource type="Texture2D" uid="uid://3wvkbo2wlq88" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_008.png" id="34_yxwda"]
+[ext_resource type="Texture2D" uid="uid://dt5p4fumvvslo" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_009.png" id="35_8mak8"]
+[ext_resource type="Texture2D" uid="uid://dcy0k32fajy7e" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_010.png" id="36_fbwue"]
+[ext_resource type="Texture2D" uid="uid://c3i8dvqloidn4" path="res://assets/wraith/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_011.png" id="37_iwx7u"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_t2bk7"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ycpls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_go12v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y8fmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5lhss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_71s0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yhg6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ocvca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_td8m7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qc6is")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0n0re")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1vy61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_3mn3c")
+}],
 "loop": true,
-"name": &"default",
+"name": &"attack",
 "speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_mf6vp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_p2dxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fed6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4opty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_0nvnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_rdt54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_xpg75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_shqtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xrpn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_egyrw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_iwkjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_k3t75")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_nv82y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_5ucwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_veuiw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_daovl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ta004")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_1nr47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ufudg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_xvy06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_yxwda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_8mak8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_fbwue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_iwx7u")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 10.0
 }]
 
 [node name="candy enemy" type="CharacterBody2D"]
@@ -15,4 +169,4 @@ script = ExtResource("1_t2bk7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_t2bk7")
-frame_progress = 0.659881
+animation = &"attack"

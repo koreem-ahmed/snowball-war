@@ -1,17 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://dltrvw5qolb70"]
+[gd_scene load_steps=4 format=3 uid="uid://dltrvw5qolb70"]
 
+[ext_resource type="Script" uid="uid://d17k74513tmn5" path="res://scripts/arrow.gd" id="1_23jat"]
 [ext_resource type="Texture2D" uid="uid://pejta02w214h" path="res://assets/men/Archer/Arrow.png" id="1_umosx"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_umosx"]
-a = Vector2(-20, 0)
-b = Vector2(21, 0)
+a = Vector2(-14, 0)
+b = Vector2(16, 0)
 
 [node name="arrow" type="Node2D"]
+script = ExtResource("1_23jat")
 
 [node name="arrow_png" type="Sprite2D" parent="."]
+position = Vector2(-9.53674e-07, -9.53674e-07)
+scale = Vector2(0.344, 0.344)
 texture = ExtResource("1_umosx")
 
 [node name="hit_area" type="Area2D" parent="."]
+collision_layer = 64
+collision_mask = 64
 
 [node name="collision" type="CollisionShape2D" parent="hit_area"]
+scale = Vector2(0.5, 0.5)
 shape = SubResource("SegmentShape2D_umosx")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="body_entered" from="hit_area" to="." method="_on_hit_area_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
