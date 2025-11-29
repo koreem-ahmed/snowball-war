@@ -20,5 +20,5 @@ func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 
 
 func _on_hit_area_body_entered(body: Node2D) -> void:
-	body.health -= 20
+	body.health -= 40
 	queue_free()

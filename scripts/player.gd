@@ -6,15 +6,15 @@ extends CharacterBody2D
 @onready var marker_2d: Marker2D = $Marker2D
 @onready var score: Label = $Label
 
-const SPEED = 220.0
+const SPEED = 170.0
 const JUMP_VELOCITY = -300.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_attacking = false
 
 var death = false
-var health = 100
-var max_hel = 100
+var health = 120
+var max_hel = 120
 var min_hel = 0
 
 var no = true

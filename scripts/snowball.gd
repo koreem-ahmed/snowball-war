@@ -1,8 +1,9 @@
 extends Node2D
 
-@onready var sprite_2d: Sprite2D = $Sprite2D
 
-var speed = 300
+@onready var sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+
+var speed = 200
 var dir = 1
 
 func _physics_process(delta: float) -> void:

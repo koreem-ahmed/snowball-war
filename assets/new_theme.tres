@@ -4,16 +4,16 @@
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75vm7"]
-bg_color = Color(0, 0.741872, 0.946651, 1)
+bg_color = Color(0.654902, 0.741176, 0.94902, 1)
 border_width_bottom = 15
-border_color = Color(9.62615e-08, 0.561217, 0.719046, 1)
+border_color = Color(0.391673, 0.521742, 0.873862, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6pma3"]
-bg_color = Color(0, 0.741176, 0.945098, 1)
+bg_color = Color(0.654902, 0.741176, 0.94902, 1)
 border_width_top = 15
 border_color = Color(0, 0.560784, 0.717647, 0)
 corner_radius_top_left = 20
@@ -22,6 +22,7 @@ corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [resource]
+Button/colors/font_color = Color(0.219608, 0.219608, 0.458824, 1)
 Button/styles/disabled = null
 Button/styles/focus = SubResource("StyleBoxFlat_kxa5r")
 Button/styles/hover = SubResource("StyleBoxFlat_75vm7")

@@ -9,5 +9,5 @@ script = ExtResource("1_ia5t2")
 amount = 30000
 lifetime = 10.0
 emission_shape = 3
-emission_rect_extents = Vector2(10000, 1)
+emission_rect_extents = Vector2(5000, 1)
 gravity = Vector2(0, 100)
