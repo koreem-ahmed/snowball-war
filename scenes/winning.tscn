@@ -89,3 +89,11 @@ position = Vector2(-46, 31)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
 position = Vector2(11, 11)
 shape = SubResource("WorldBoundaryShape2D_ai4rf")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -57.0
+offset_top = -83.0
+offset_right = 90.0
+offset_bottom = -34.0
+text = "You won <3
+Thanks for playing "
